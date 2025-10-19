@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    
+    <!-- AOS Library -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <title>Contact - Arshid Banu Shaik</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <nav>
+        <div class="nav-container">
+            <div class="logo" data-aos="zoom-in" data-aos-duration="1000">
+                <span>Arshid Banu Shaik</span>
+            </div>
+            <div class="links">
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100"><a href="index.html">Home</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200"><a href="about.html">About</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300"><a href="experience.html">Experience</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400"><a href="skills-projects.html">Skills & Projects</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500"><a href="publications.html">Publications</a></div>
+                <div class="link contact-btn" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600"><a href="contact.html">Contact</a></div> 
+            </div>
+            <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
+        </div>
+       
+
+        <div class="dropdown">
+            <div class="links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="experience.html">Experience</a>
+                <a href="skills-projects.html">Skills & Projects</a>
+                <a href="publications.html">Publications</a>
+                <a href="contact.html">Contact</a>
+                <i class="fa-solid fa-xmark cancel" onclick="cancel()"></i>
+            </div>
+        </div>
+    </nav>
+
+    <section id="contact">
+         <h2>Contact Me</h2>
+         <p>Have a question, collaboration idea, or opportunity? Feel free to reach out — I’d love to connect!</p>
+
+  <form id="contact-form" action="https://api.web3forms.com/submit" method="POST">
+    <!-- Your access key -->
+    <input type="hidden" name="access_key" value="ed35e0ad-2baa-4203-9cbe-839c077e9330">
+
+    <div class="form-group">
+      <label for="name">Full Name</label>
+      <input type="text" id="name" name="name" placeholder="Enter your name" required>
+    </div>
+
+    <div class="form-group">
+      <label for="email">Email Address</label>
+      <input type="email" id="email" name="email" placeholder="Enter your email" required>
+    </div>
+
+    <div class="form-group">
+      <label for="subject">Subject</label>
+      <input type="text" id="subject" name="subject" placeholder="Enter subject" required>
+    </div>
+
+    <div class="form-group">
+      <label for="message">Your Message</label>
+      <textarea id="message" name="message" placeholder="Type your message here..." rows="6" required></textarea>
+    </div>
+
+    
+    <input type="hidden" name="redirect" value="https://yourwebsite.com/thank-you.html">
+
+    <button type="submit" class="send-btn">Send Message</button>
+  </form>
+    </section>
+
+    <script>
+    document.getElementById("contact-form").addEventListener("submit", function(event){
+    alert("Thank you! Your message has been sent successfully.");
+   });
+   </script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({offset:0});
+
+        function hamburg(){
+            const navbar=document.querySelector(".dropdown");
+            navbar.style.transform = "translateY(0)";
+        }
+
+        function cancel(){
+            const navbar=document.querySelector(".dropdown");
+            navbar.style.transform = "translateY(-100%)";
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    
+    <!-- AOS Library -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <title>Publications - Arshid Banu Shaik</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <nav>
+        <div class="nav-container">
+            <div class="logo" data-aos="zoom-in" data-aos-duration="1000">
+                <span>Arshid Banu Shaik</span>
+            </div>
+            <div class="links">
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100"><a href="index.html">Home</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200"><a href="about.html">About</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300"><a href="experience.html">Experience</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400"><a href="skills-projects.html">Skills & Projects</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500"><a href="publications.html">Publications</a></div>
+                <div class="link contact-btn" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600"><a href="contact.html">Contact</a></div> 
+            </div>
+            <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
+        </div>
+       
+
+        <div class="dropdown">
+            <div class="links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="experience.html">Experience</a>
+                <a href="skills-projects.html">Skills & Projects</a>
+                <a href="publications.html">Publications</a>
+                <a href="contact.html">Contact</a>
+                <i class="fa-solid fa-xmark cancel" onclick="cancel()"></i>
+            </div>
+        </div>
+    </nav>
+
+    <section id="publications">
+        <h2>Publications</h2>
+  <p>Here are some of the book chapters and research papers I have authored or co-authored.</p>
+
+  <div class="publication-category">
+    <h3>Book Chapters</h3>
+    <div class="publication-list">
+      <div class="publication">
+        <h4>The Future of Tissue Engineering: Integrating ML, AI, and Computer Vision</h4>
+        <span>Tvisha Chawla, Vaishnavi Rukhaiyar, Shaik Arshid Banu, Subhash Singh; 2025. Tissue Engineering and Regenerative Medicine: Advances and Applications, p.24.</span>
+        <p>DOI: <a href="https://www.taylorfrancis.com/chapters/edit/10.1201/9781003536352-2/future-tissue-engineering-tvisha-chawla-vaishnavi-rukhaiyar-shaik-arshid-banu-subhash-singh" target="_blank">10.1201/9781003536352-2</a></p>
+      </div>
+
+      <div class="publication">
+        <h4>Natural Biomaterials for Tissue Engineering and Regenerative Medicine</h4>
+        <span>Shaik Arshid Banu, Subhash Singh; 2025. Tissue Engineering and Regenerative Medicine: Advances and Applications.</span>
+        <p>DOI: <a href="https://www.taylorfrancis.com/chapters/edit/10.1201/9781003536352-4/natural-biomaterials-tissue-engineering-regenerative-medicine-shaik-arshid-banu-subhash-singh" target="_blank">10.1201/9781003536352-4</a></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="publication-category">
+    <h3>Research Papers</h3>
+    <div class="publication-list">
+      <div class="publication">
+        <h4>Enhanced Lung Cancer Classification Using Contrast-Enhanced Imaging and Deep Learning Architectures</h4>
+        <span>Shaik Arshid Banu, Ritu Rani, Garima Jaiswal, Arun Sharma; 2025; ARIIA; IEEE Xplore</span>
+        <p>DOI: <a href="https://doi.org/10.1109/ARIIA63345.2024.11051774" target="_blank">10.1109/ARIIA63345.2024.11051774</a></p>
+      </div>
+
+      <div class="publication">
+        <h4>Machine Learning Assisted Prediction of Creep Life in Ni-Based Alloys: An Ensemble-Based Stacking Regressor Approach</h4>
+        <span>Shaik Arshid Banu, Gaytri Mohapatra, Sanya Kushwaha, Himani Himani, Lavanya Tanwar, Subhash Singh; 2025; IITCEE</span>
+        <p>DOI: <a href="https://doi.org/10.1109/IITCEE64140.2025.10915366" target="_blank">10.1109/IITCEE64140.2025.10915366</a></p>
+      </div>
+    </div>
+  </div>
+    </section>
+     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({offset:0});
+
+        function hamburg(){
+            const navbar=document.querySelector(".dropdown");
+            navbar.style.transform = "translateY(0)";
+        }
+
+        function cancel(){
+            const navbar=document.querySelector(".dropdown");
+            navbar.style.transform = "translateY(-100%)";
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    
+    <!-- AOS Library -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <title>Sills & Projects- Arshid Banu Shaik</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <nav>
+        <div class="nav-container">
+            <div class="logo" data-aos="zoom-in" data-aos-duration="1000">
+                <span>Arshid Banu Shaik</span>
+            </div>
+            <div class="links">
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100"><a href="index.html">Home</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200"><a href="about.html">About</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300"><a href="experience.html">Experience</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400"><a href="skills-projects.html">Skills & Projects</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500"><a href="publications.html">Publications</a></div>
+                <div class="link contact-btn" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600"><a href="contact.html">Contact</a></div> 
+            </div>
+            <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
+        </div>
+       
+
+        <div class="dropdown">
+            <div class="links">
+                 <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="experience.html">Experience</a>
+                <a href="skills-projects.html">Skills & Projects</a>
+                <a href="publications.html">Publications</a>
+                <a href="contact.html">Contact</a>
+                <i class="fa-solid fa-xmark cancel" onclick="cancel()"></i>
+            </div>
+        </div>
+    </nav>
+
+  <section id="skills-projects">
+  <h2>Skills & Projects</h2>
+
+  <!-- SKILLS -->
+  <div class="skills-container">
+    <h3>Technical Skills</h3>
+    <div class="skills-grid">
+      <div class="skill"><i class="fab fa-python"></i><p>Python</p></div>
+      <div class="skill"><i class="fab fa-cuttlefish"></i><p>C / C++</p></div>
+      <div class="skill"><i class="fab fa-js"></i><p>JavaScript</p></div>
+      <div class="skill"><i class="fab fa-html5"></i><p>HTML</p></div>
+      <div class="skill"><i class="fab fa-css3-alt"></i><p>CSS</p></div>
+      <div class="skill"><i class="fab fa-react"></i><p>ReactJS</p></div>
+      <div class="skill"><i class="fab fa-node-js"></i><p>NodeJS</p></div>
+      <div class="skill"><i class="fas fa-database"></i><p>MySQL</p></div>
+      <div class="skill"><i class="fas fa-brain"></i><p>TensorFlow / PyTorch / Keras</p></div>
+    </div>
+  </div>
+
+  <!-- CERTIFICATIONS -->
+  <div class="certifications">
+    <h3>Certifications</h3>
+    <div class="cert-grid">
+      <a href="https://drive.google.com/file/d/1Bz724Krmtsy75VL3-V6JyvgqbGt78sJ6/view?usp=sharing" target="_blank" class="cert-card">
+        <div class="cert-inner">
+          <div class="cert-front">
+            <i class="fas fa-award"></i>
+            <p><strong>Supervised Machine Learning:</strong> Regression & Classification</p>
+            <p>Coursera</p>
+          </div>
+          <div class="cert-back">
+            <p>Issued by <strong>Stanford Online</strong></p>
+            <p>Instructor: Andrew Ng</p>
+            <span>Click to view certificate</span>
+          </div>
+        </div>
+      </a>
+
+      <a href="https://drive.google.com/drive/folders/1Pel1PBkZlrWPIgs1IrtTTeYrjub3jxuv?usp=sharing" target="_blank" class="cert-card">
+        <div class="cert-inner">
+          <div class="cert-front">
+            <i class="fas fa-award"></i>
+            <p><strong>IBM Enterprise Data Science in Practice</strong></p>
+            <p>IBM Skills Network</p>
+          </div>
+          <div class="cert-back">
+            <p>Practical exposure to ML pipelines, data engineering, and visualization tools.</p>
+            <span>Click to view credential</span>
+          </div>
+        </div>
+      </a>
+    </div>
+  </div>
+
+  <!-- PROJECTS -->
+  <div class="projects">
+    <h3>Projects</h3>
+    <div class="project-grid">
+
+      <a href="https://github.com/ShaikArshidBanu/Lung-Cancer-Classification" target="_blank" class="project-card">
+        <div class="project-inner">
+          <div class="project-front">
+            <h4>Lung Cancer Classification</h4>
+            <p>Hybrid model combining image enhancement, deep learning feature extraction (7 models), and SVM achieving <strong>96% accuracy</strong>.</p>
+          </div>
+          <div class="project-back">
+            <p>Used: ResNet-50, DenseNet-121, GoogLeNet, SVM</p>
+            <span>Click to view research</span>
+          </div>
+        </div>
+      </a>
+
+      <a href="https://github.com/ShaikArshidBanu/Deep-Learning-Algorithms-for-Surface-Defect-Detection" target="_blank" class="project-card">
+        <div class="project-inner">
+          <div class="project-front">
+            <h4>Surface Defect Detection</h4>
+            <p>Deep learning for detecting steel cracks using Sequential and Functional APIs. Achieved <strong>97% accuracy</strong>.</p>
+          </div>
+          <div class="project-back">
+            <p>Used: CNN, TensorFlow, Keras, OpenCV</p>
+            <span>Click to view code</span>
+          </div>
+        </div>
+      </a>
+
+      <a href="https://github.com/ShaikArshidBanu/Amazon-Sales-Data-Analysis" target="_blank" class="project-card">
+        <div class="project-inner">
+          <div class="project-front">
+            <h4>Amazon Sales Data Analysis Dashboard</h4>
+            <p>Interactive dashboard analyzing Amazon sales and revenue trends using <strong>Power BI, Python, SQL, Excel</strong>.</p>
+          </div>
+          <div class="project-back">
+            <p>Features: Trend analysis, dynamic filtering, performance visualization</p>
+            <span>View on Power BI</span>
+          </div>
+        </div>
+      </a>
+
+      <a href="https://arshiemojigame.ccbp.tech/" target="_blank" class="project-card">
+        <div class="project-inner">
+          <div class="project-front">
+            <h4>Emoji Game</h4>
+            <p>Engaging emoji-based memory challenge built with <strong>ReactJS & CSS</strong>. Includes state management and UI polish.</p>
+          </div>
+          <div class="project-back">
+            <p>Frontend: React Components, Event Handling, Conditional Rendering</p>
+            <span>Try Game</span>
+          </div>
+        </div>
+      </a>
+
+    </div>
+  </div>
+</section>
+
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({offset:0});
+
+        function hamburg(){
+            const navbar=document.querySelector(".dropdown");
+            navbar.style.transform = "translateY(0)";
+        }
+
+        function cancel(){
+            const navbar=document.querySelector(".dropdown");
+            navbar.style.transform = "translateY(-100%)";
+        }
+    </script>
+</body>
+</html>

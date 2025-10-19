@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    
+    <!-- AOS Library -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">s
+   <!-- AOS for scroll animations -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+
+    <title>Experience- Arshid Banu Shaik</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <nav>
+        <div class="nav-container">
+            <div class="logo" data-aos="zoom-in" data-aos-duration="1000">
+                <span>Arshid Banu Shaik</span>
+            </div>
+            <div class="links">
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100"><a href="index.html">Home</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200"><a href="about.html">About</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300"><a href="experience.html">Experience</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400"><a href="skills-projects.html">Skills & Projects</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500"><a href="publications.html">Publications</a></div>
+                <div class="link contact-btn" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600"><a href="contact.html">Contact</a></div> 
+            </div>
+            <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
+        </div>
+       
+
+        <div class="dropdown">
+            <div class="links">
+                 <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="experience.html">Experience</a>
+                <a href="skills-projects.html">Skills & Projects</a>
+                <a href="publications.html">Publications</a>
+                <a href="contact.html">Contact</a>
+                <i class="fa-solid fa-xmark cancel" onclick="cancel()"></i>
+            </div>
+        </div>
+    </nav>
+
+  <section id="experience">
+  <h2 data-aos="fade-up">Experience</h2>
+
+  <!-- Work Experience -->
+  <div class="experience-category" data-aos="fade-up" data-aos-delay="100">
+    <h3><i class="fas fa-briefcase"></i> Work Experience</h3>
+    <div class="experience-card">
+      <div class="experience-header">
+        <h4>Graduate Engineer Trainee (Data Scientist) | Kenvue </h4>
+        <span>August 2025 – Present</span>
+      </div>
+      <ul>
+        <li>Leveraging Generative AI and Large Language Models for supply chain optimization.</li>
+        <li>Applying ML, statistical analysis, and AI-driven forecasting models for demand prediction.</li>
+        <li>Collaborating across teams to build scalable, data-driven strategies.</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Internship Experience -->
+  <div class="experience-category" data-aos="fade-up" data-aos-delay="200">
+    <h3><i class="fas fa-laptop-code"></i> Internship Experience</h3>
+
+    <div class="experience-card">
+      <div class="experience-header">
+        <h4>Salesforce Developer Engineer | Keysight Technologies</h4>
+        <span>Jan 2025 – Jul 2025</span>
+      </div>
+      <ul>
+        <li>Gained hands-on experience with Salesforce CRM development and customization.</li>
+        <li>Optimized internal sales workflows and improved data tracking efficiency.</li>
+      </ul>
+    </div>
+
+    <div class="experience-card">
+      <div class="experience-header">
+        <h4>Open Source Contributor | GirlScript Summer of Code</h4>
+        <span>May 2024 – Jul 2024</span>
+      </div>
+      <ul>
+        <li>Contributed to ML repositories on Audio Anomaly Detection and Transfer Learning.</li>
+        <li>Merged 4 pull requests improving model monitoring and VGG16/ResNet-50 implementations.</li>
+      </ul>
+    </div>
+
+    <div class="experience-card">
+      <div class="experience-header">
+        <h4>ML/DL Intern | AIQuantum Smart Solutions Pvt. Ltd.</h4>
+        <span>May 2023 – Jul 2023</span>
+      </div>
+      <ul>
+        <li>Developed CNN-based models for steel surface crack detection, achieving 97% accuracy.</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Research Experience -->
+  <div class="experience-category" data-aos="fade-up" data-aos-delay="300">
+    <h3><i class="fas fa-microscope"></i> Research Experience</h3>
+
+    <div class="experience-card">
+      <div class="experience-header">
+        <h4>Carnegie Mellon University | Research Intern</h4>
+        <span>Oct 2024 – Mar 2025</span>
+      </div>
+      <ul>
+        <li>Worked remotely at the XU Lab (CMU School of CS) on Computer Vision and Pattern Recognition.</li>
+      </ul>
+    </div>
+
+    <div class="experience-card">
+      <div class="experience-header">
+        <h4>Centre of Excellence in AI, IGDTUW | Research Intern</h4>
+        <span>Jun 2024 – Oct 2024</span>
+      </div>
+      <ul>
+        <li>Conducted deep learning research on Lung Cancer Classification using ResNet50, DenseNet-121, and GoogLeNet.</li>
+        <li>Authored IEEE paper titled <em>"Enhanced Lung Cancer Classification Using Contrast-Enhanced Imaging and Deep Learning Architectures"</em>.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1000,
+      once: true
+     });
+    </script>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({offset:0});
+
+        function hamburg(){
+            const navbar=document.querySelector(".dropdown");
+            navbar.style.transform = "translateY(0)";
+        }
+
+        function cancel(){
+            const navbar=document.querySelector(".dropdown");
+            navbar.style.transform = "translateY(-100%)";
+        }
+    </script>
+</body>
+</html>
